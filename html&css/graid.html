@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid exe</title>
+</head>
+<body style="padding-bottom: 1000px;">
+    <!-- 
+        Grid: is a layout that has rows and columms
+        1fr: is means free space line.
+        To creat a very good contaner: first we should use div and grid togather.
+        
+        to creat grid u must follow these steps:
+        1- display: grid; -> set up the element
+        2- grid-templat-columns: set up the numbers of columns for ex/ 50px set up the logo photo. 1fr to set up the rmain space for the title and the auther's name
+
+        column-gap: is giving a space between the coulmns as well as rows-gap.
+    -->
+    <div style="
+        display: grid;
+        grid-template-columns: 100px 100px;
+    ">
+        <div style="background-color:
+        lightblue;">div 1</div>
+        <div style="background-color:
+        lightpink;">div 2 <p>text</p></div>
+    </div>
+
+    <div style="
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 100px 100px 200px;
+    ">
+        <div style="background-color:
+        lightblue;">100px</div>
+        <div style="background-color:
+        lightpink;">100px <p>text</p></div>
+        <div style="background-color:
+        lightblue;">200px</div>
+        <div style="background-color:
+        lightpink;">100px</div>
+    </div>
+
+        <div style="
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 100px 1fr;
+    ">
+        <div style="background-color:
+        lightblue;">100px</div>
+        <div style="background-color:
+        lightpink;">1fr</div>
+
+    </div>
+
+    <div style="
+        margin-top: 30px;
+        display: grid;
+        display: grid;
+        grid-template-columns: 100px 1fr 1fr;
+    ">
+        <div style="background-color:
+        lightblue;">100px</div>
+        <div style="background-color:
+        lightpink;">1fr</div>
+        <div style="background-color:
+        lightblue;">2fr</div>
+
+    </div>
+
+    <div style="
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 40px;
+    ">
+        <div style="background-color:
+        lightblue; height: 200px;">1fr</div>
+        <div style="background-color:
+        lightpink; height: 200px;">1fr</div>
+        <div style="background-color:
+        lightblue; height: 200px;">1fr</div>
+        <div style="background-color:
+        lightpink; height: 200px;">1fr</div>
+        <div style="background-color:
+        lightblue; height: 200px;">1fr</div>
+        <div style="background-color:
+        lightpink; height: 200px;">1fr</div>
+
+    </div>
+</body>
+</html>

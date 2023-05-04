@@ -1,0 +1,65 @@
+    /* The selector that's more specific has higher priority like give to it a class or id not like <p> etc.. 
+        <span> elment has no style but u can put it in the text and add a class so that u can styling it.
+    */
+    p {
+        font-family: Arial;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .title {
+        
+        font-weight: bold;
+        font-size: 18px;
+        width: 280px;
+        line-height: 24px;
+        margin-bottom: 5;
+
+    }
+
+    .state {
+        
+        font-size: 14px;
+        color: rgb(96, 96, 96);
+        
+        margin-bottom: 20px;
+    }
+
+    .name {
+        
+        font-size: 14px;
+        color: rgb(96, 96, 96);
+        
+        margin-bottom: 20px;
+        
+    }
+
+    .descrption {
+        
+        font-size: 14px;
+        color: rgb(96, 96, 96);
+        width: 280px;
+        /* line height is the space between the lins or the texts*/
+        line-height: 22px;
+        margin-bottom: 100px;
+    }
+
+    .shop_now {
+        margin-bottom: 50px;
+        font-size: 14px;
+        background-color: rgb(277, 65, 64);
+        color: white;
+        text-align: center;
+        padding-top: 18px;
+        padding-bottom: 18;
+        
+    }
+
+    .shopLink {
+        cursor: pointer;
+        margin-left: 12px;
+    }
+
+    .shopLink:hover {
+        text-decoration: underline;
+    }

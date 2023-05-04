@@ -1,0 +1,97 @@
+.subscribe-button {
+    background-color: rgb(200, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    /* margin is adding spaces outsides the element*/
+    margin-right: 8px;
+    margin-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    transition: opacity 0.15s;
+    vertical-align: top;
+} 
+
+.subscribe-button:hover {
+    opacity: 0.8; 
+}
+.subscribe-button:active {
+    opacity: 0.5;
+}
+.join-button {
+    background-color: white;
+    color: rgb(6, 95, 212);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+    border-color: rgb(6, 95, 212);
+    cursor: pointer;
+    transition: background-color 0.15s, color 0.15s;
+    /* padding is adding spaces inside the element*/
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.join-button:hover {
+    background-color: rgb(6, 95, 212);
+    color: white;
+}
+.join-button:active {
+    opacity: 0.7; 
+}
+
+.Tweet-button {
+    background-color: rgb(29,155,240);
+
+    color: white;
+    border: none;
+    border-radius: 18px;
+    margin-left: 8px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: box-shadow 0.15s;
+    vertical-align: top;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.Tweet-button:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+.Tweet-button:active {
+    opacity: 0.7;
+}
+
+
+.Amazon-button {
+    background-color: rgb(255, 216, 20);
+    color: black;
+    border: none;
+    
+    border-radius: 20px;
+    margin-left: 8px;
+    cursor: pointer;
+    vertical-align: top;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    /* CSS Box Model: is a box contain margin, border, padding, and whatever you add text it will be suitable*/
+    
+}
+
+.Amazon-button:hover {
+    box-shadow: 5px 5px 10px rgba(75, 77, 5, 0.15);
+}
+.Amazon-button:active {
+    opacity: 0.7;
+}

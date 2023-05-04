@@ -1,0 +1,194 @@
+.search-bar {
+    /* block element: is taking the entire line.
+    inline-block element: only takes up as much space as nedded.
+    line-highte: is editing the texts spaces.
+
+    flex element is streaching the line like the search bar and make it more flixble than the width element.
+    max-width:300px/ said that is the width will be less than 300 as soon as grows to be over than 300 will stop to be wider
+    To make the header stick in the page when u scroling down you must use (position: fixed;)
+    position:absolute; is very suefull for putting the elements in the corner or to use it around.
+    */
+    flex: 1;
+    height: 34px;
+    padding-left: 10px;
+    font-size: 16px;
+    border: 1px solid rgb(192, 192, 192);
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.05);
+    width: 0;
+}
+
+.search-bar::placeholder {
+    font-family: Roboto, Arial;
+    font-size: 16px;
+}
+
+.header {
+    height: 55px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(228, 228, 228);
+    z-index: 100;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    
+}
+
+.hamburger-menu {
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.youtube-logo {
+    height: 20px;
+}
+
+.middle-section {
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.search-btn {
+    height: 38px;
+    width: 66px; 
+    background-color: rgb(240, 240, 240);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192);
+    margin-left: -1px;
+    margin-right: 10px;
+
+    
+}
+
+.search-btn,
+.voice-btn, 
+.upliad-contianer,
+.ytb-apps-contianer,
+.notifications-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.search-btn .tooltip,
+.voice-btn .tooltip,
+.upliad-contianer .tooltip,
+.ytb-apps-contianer .tooltip,
+.notifications-icon-container .tooltip {
+    font-family: Ropoto, Arial;
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.search-btn:hover .tooltip,
+.voice-btn:hover .tooltip,
+.upliad-contianer:hover .tooltip,
+.ytb-apps-contianer:hover .tooltip,
+.notifications-icon-container:hover .tooltip {
+    opacity: 1;
+}
+
+.search-icon {
+    height: 25px;
+}
+
+.voice-btn {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(245, 245, 245);
+}
+
+.voice-icon {
+    height: 24px;
+    
+}
+
+
+.right-section {
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* flex-shrink: is let the logos or the elements dosen't shrink bwteen them when resize the page*/
+    flex-shrink: 0;
+}
+
+.upld {
+    height: 24px;
+}
+
+
+
+.ytb-apps {
+    height: 24px;
+}
+
+
+.notification-icon {
+    height: 24px;
+}
+
+.notifications-icon-container {
+    position: relative;
+}
+
+.notification-count {
+    position: absolute;
+    /* in the below example (top, right) there is a trick way that
+    we can move the count number outside the element by
+    using nigtave like (-2px) to make it more padding as requsted */
+
+    top:-2px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    font-family: Roboto, Arial;
+    font-size: 11px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+}
+
+.channal-logo {
+    /* to make the logo circle we msut use the half of the hight number */
+    height: 32px;
+    border-radius: 16px;
+    margin-right: 20px;
+}
+
